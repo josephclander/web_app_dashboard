@@ -1,5 +1,7 @@
 @import 'colors';
 @import 'global';
+@import 'variables';
 @import 'layout';
 @import 'typography';
-@import 'variables';
+
+@import 'components/header';

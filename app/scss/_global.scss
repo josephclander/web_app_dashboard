@@ -1,20 +1,19 @@
 html {
   box-sizing: border-box;
   font-size: 100%;
-  margin: 0;
-  padding: 0;
 }
 
 *,
 *:before,
 *:after {
   box-sizing: inherit;
+  margin: 0;
+  padding: 0;
 }
 
 // TEMPORARY SIZE STYLES
 .header,
 .sidebar,
 .main > * {
-  padding: 10px;
   border: 1px solid $grey-dark;
 }

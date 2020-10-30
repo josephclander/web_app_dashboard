@@ -1,0 +1,45 @@
+.header {
+  padding: 0.7rem;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  background: $primary;
+  color: $white;
+
+  &__title {
+    & span {
+      font-weight: 300;
+    }
+  }
+}
+
+.user {
+  display: flex;
+  align-items: center;
+  line-height: 2;
+
+  font-weight: 300;
+  height: 2rem;
+
+  & :not(:last-child) {
+    margin-right: 0.5rem;
+  }
+
+  &__notification {
+    border-right: 1px solid $primary-dark;
+    padding-right: 0.5rem;
+  }
+  &__photo {
+    display: flex;
+
+    & img {
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+    }
+  }
+  &__name {
+  }
+}
