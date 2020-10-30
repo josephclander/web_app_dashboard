@@ -1,0 +1,19 @@
+.sidebar {
+  background: $primary-dark;
+  padding: 0.8rem;
+  color: rgba($white, 0.5);
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  &__item {
+    margin: 1rem;
+    transition: color 0.3s;
+
+    &.selected,
+    &:hover {
+      color: rgba($white, 1);
+    }
+  }
+}

@@ -1,0 +1,37 @@
+.search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: $grey-light;
+  border: 1px solid $grey-dark;
+  padding: 0.7rem;
+
+  &__container {
+    border: 1px solid $grey-dark;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+
+    background: $white;
+    color: $grey-dark;
+  }
+
+  &__input,
+  &__mag-icon {
+    padding: 0.5rem;
+    border: none;
+    border-radius: 5px;
+  }
+
+  &__input {
+    font-family: inherit;
+    font-size: inherit;
+    color: $text;
+    min-width: 200px;
+
+    &::placeholder {
+      color: $grey-dark;
+    }
+  }
+}
