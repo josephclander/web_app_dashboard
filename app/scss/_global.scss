@@ -10,3 +10,11 @@ html {
 *:after {
   box-sizing: inherit;
 }
+
+// TEMPORARY SIZE STYLES
+.header,
+.sidebar,
+.main > * {
+  padding: 10px;
+  border: 1px solid $grey-dark;
+}
