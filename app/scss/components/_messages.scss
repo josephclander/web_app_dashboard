@@ -1,0 +1,45 @@
+.messages {
+  padding: 0.5rem;
+
+  display: flex;
+  flex-direction: column;
+
+  &__title {
+    padding: 0.5rem 0;
+    text-transform: uppercase;
+  }
+
+  &__search,
+  &__message,
+  &__btn {
+    font-family: inherit;
+    border: 1px solid $grey-dark;
+    padding: 0.5rem;
+    color: $grey-dark;
+    border-radius: 5px;
+  }
+
+  &__search,
+  &__message {
+    background-color: $grey-light;
+  }
+
+  &__search::placeholder,
+  &__message::placeholder {
+    color: $grey-dark;
+    background-color: $grey-light;
+  }
+
+  &__search {
+    margin-bottom: 0.5rem;
+  }
+
+  &__message {
+    margin-bottom: 0.5rem;
+    resize: none;
+  }
+
+  &__btn {
+    background-color: $primary;
+  }
+}
