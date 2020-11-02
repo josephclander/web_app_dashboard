@@ -4,12 +4,14 @@
 @import 'layout';
 @import 'typography';
 
-@import 'components/header';
-@import 'components/sidebar';
-@import 'components/title';
-@import 'components/search';
 @import 'components/alert';
-@import 'components/social';
-@import 'components/new-members';
-@import 'components/recent-activity';
-@import 'components/messages';
+@import 'components/button';
+
+@import 'layout/header';
+@import 'layout/sidebar';
+@import 'layout/title';
+@import 'layout/search';
+@import 'layout/social';
+@import 'layout/new-members';
+@import 'layout/recent-activity';
+@import 'layout/messages';
