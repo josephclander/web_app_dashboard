@@ -10,18 +10,17 @@
   }
 
   &__search,
-  &__message,
-  &__btn {
+  &__message {
     font-family: inherit;
     border: 1px solid $grey-dark;
     padding: 0.5rem;
-    color: $grey-dark;
     border-radius: 5px;
   }
 
   &__search,
   &__message {
     background-color: $grey-light;
+    color: $grey-dark;
   }
 
   &__search::placeholder,
