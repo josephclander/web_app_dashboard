@@ -1,0 +1,46 @@
+.settings {
+  padding: 0.5rem;
+
+  display: flex;
+  flex-direction: column;
+
+  &__title {
+    padding: 0.5rem 0;
+    text-transform: uppercase;
+  }
+
+  &__switch {
+    margin: 1rem 0;
+  }
+
+  &__drop-down {
+    margin: 1rem 0;
+  }
+
+  &__cta {
+    display: flex;
+    margin: 1rem 0;
+  }
+
+  &__save {
+    background-color: $primary;
+    margin-right: 1rem;
+    flex: 1;
+  }
+
+  &__save:hover,
+  &__save:active {
+    background-color: $primary-dark;
+  }
+
+  &__cancel {
+    background-color: $grey-dark;
+    margin-left: 1rem;
+    flex: 1;
+  }
+
+  &__cancel:hover,
+  &__cancel:active {
+    background-color: darken($grey-dark, 30%);
+  }
+}
