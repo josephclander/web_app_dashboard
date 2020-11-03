@@ -26,6 +26,7 @@
     background-color: $primary;
     margin-right: 1rem;
     flex: 1;
+    transition: 0.4s;
   }
 
   &__save:hover,
@@ -37,6 +38,7 @@
     background-color: $grey-dark;
     margin-left: 1rem;
     flex: 1;
+    transition: 0.4s;
   }
 
   &__cancel:hover,

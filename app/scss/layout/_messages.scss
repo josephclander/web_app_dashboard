@@ -40,5 +40,10 @@
 
   &__btn {
     background-color: $primary;
+    transition: 0.4s;
+  }
+
+  &__btn:hover {
+    background-color: $primary-dark;
   }
 }
