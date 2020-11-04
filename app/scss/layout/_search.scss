@@ -18,10 +18,9 @@
   }
 
   &__input,
-  &__mag-icon {
+  &__button {
     padding: 0.5rem;
     border: none;
-    border-radius: 5px;
   }
 
   &__input {
@@ -29,9 +28,46 @@
     font-size: inherit;
     color: $text;
     min-width: 200px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    outline: none;
 
     &::placeholder {
       color: $grey-dark;
     }
+
+    &:focus::placeholder {
+      color: $primary;
+    }
+  }
+
+  &__button {
+    background-color: $white;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border: none;
+    outline: none;
+
+    transition: 0.4s;
+  }
+
+  &__button:hover,
+  &__button:focus,
+  &__button:active {
+    background-color: $grey-dark;
+  }
+
+  &__mag-icon {
+    height: 1.5rem;
+    width: 1.5rem;
+    color: $primary;
+    cursor: pointer;
+
+    transition: color 0.4s;
+  }
+
+  &__button:hover &__mag-icon,
+  &__button:focus &__mag-icon {
+    color: $white;
   }
 }
