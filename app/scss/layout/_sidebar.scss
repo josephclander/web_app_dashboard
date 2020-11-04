@@ -1,7 +1,7 @@
 .sidebar {
   background: $primary-dark;
   padding: 0.8rem;
-  color: rgba($white, 0.5);
+  // color: rgba($white, 0.5);
 
   display: flex;
   flex-wrap: wrap;
@@ -9,11 +9,14 @@
 
   &__item {
     margin: 1rem;
-    transition: color 0.3s;
+    opacity: 0.5;
+    transition: opacity 0.3s;
+    cursor: pointer;
 
     &.selected,
     &:hover {
-      color: rgba($white, 1);
+      // color: rgba($white, 1);
+      opacity: 1;
     }
   }
 }

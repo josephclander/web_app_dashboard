@@ -14,7 +14,7 @@
     background-color: $grey-light;
 
     display: flex;
-    align-items: center;
+    // align-items: center;
   }
 
   &__title {
@@ -25,6 +25,31 @@
   &__icon {
     color: $primary;
     margin-right: 0.5rem;
+    background-color: $primary;
+    border-radius: 50%;
+    height: 65px;
+    width: 65px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__twitter {
+    height: 32px;
+    width: 32px;
+    margin-bottom: -5px;
+  }
+
+  &__facebook {
+    height: 40px;
+    width: 40px;
+    margin-bottom: 5px;
+  }
+
+  &__google {
+    height: 32px;
+    width: 32px;
   }
 
   //   &__info {

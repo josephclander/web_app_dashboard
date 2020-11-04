@@ -30,6 +30,10 @@
   &__notification {
     border-right: 1px solid $primary-dark;
     padding-right: 0.5rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   &__photo {
     display: flex;
@@ -40,6 +44,6 @@
       border-radius: 50%;
     }
   }
-  &__name {
-  }
+  // &__name {
+  // }
 }

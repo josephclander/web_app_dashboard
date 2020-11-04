@@ -11,6 +11,8 @@ const autoprefixer = require('autoprefixer');
 const cssnano = require('cssnano');
 const replace = require('gulp-replace');
 const browserSync = require('browser-sync');
+const svgo = require('gulp-svgo');
+const svgstore = require('gulp-svgstore');
 
 const server = browserSync.create();
 
@@ -50,14 +52,19 @@ function cacheBustTask() {
     .pipe(dest('dist'));
 }
 
-// Copy Assets task: copies images folder to dist
+// Copy Images task: copies images folder to dist
 function copyImagesTask() {
   return src(['app/images/**/*']).pipe(dest('dist/images'));
 }
 
-// Copy Assets task: copies images folder to dist
+// Copy Icons task: optimize icons folder to dist
 function copyIconsTask() {
-  return src(['app/icons/**/*']).pipe(dest('dist/icons'));
+  return src(['app/icons/**/*']).pipe(svgo()).pipe(dest('app/icons'));
+}
+
+// Create svg sprite
+function iconSpriteTask() {
+  return src('app/icons/*.svg').pipe(svgstore()).pipe(dest('dist'));
 }
 
 // Copy Index task: copies index file to dist
@@ -90,6 +97,7 @@ function watchTask() {
       parallel(scssTask, jsTask),
       copyImagesTask,
       copyIconsTask,
+      iconSpriteTask,
       copyIndexTask,
       cacheBustTask,
       reload
@@ -104,6 +112,7 @@ exports.default = series(
   parallel(scssTask, jsTask),
   copyImagesTask,
   copyIconsTask,
+  iconSpriteTask,
   copyIndexTask,
   cacheBustTask,
   serve,
