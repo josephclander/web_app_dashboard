@@ -217,7 +217,15 @@
                 <h3 class="messages__title">
                     Message User
                 </h3>
-                <input class="messages__search" placeholder="Search for User" type="text">
+                <input class="messages__search" placeholder="Search for User" type="text" list="users">
+                <datalist id="users">
+                    <option value="Victoria Chambers"></option>
+                    <option value="Dale Byrd"></option>
+                    <option value="Dawn Wood"></option>
+                    <option value="Dan Oliver"></option>
+                    <option value="Dan Stevens"></option>
+                    <option value="Michael Haines"></option>
+                </datalist>
                 <textarea name="message" class="messages__message" placeholder="Message for User" type="text" rows="5"></textarea>
                 <button class="btn messages__btn" type="submit">Send</button>
             </form>
