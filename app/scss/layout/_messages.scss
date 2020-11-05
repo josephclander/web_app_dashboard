@@ -4,6 +4,32 @@
   display: flex;
   flex-direction: column;
 
+  position: relative;
+  overflow: hidden;
+
+  &__alert-window {
+    position: absolute;
+    top: 0;
+    left: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: $primary-light;
+    color: $white;
+    padding: 0.5rem;
+    width: 90%;
+    border-radius: 5px;
+    transform: translateY(-110%) translateX(-50%);
+    opacity: 1;
+    transition: all 0.4s;
+
+    &--show {
+      transform: translateY(0) translateX(-50%);
+    }
+  }
+
   &__title {
     padding: 0.5rem 0;
     text-transform: uppercase;
