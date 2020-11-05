@@ -46,13 +46,11 @@
   &__search,
   &__message {
     background-color: $grey-light;
-    color: $grey-dark;
   }
 
   &__search::placeholder,
   &__message::placeholder {
     color: $grey-dark;
-    background-color: $grey-light;
   }
 
   &__search {
