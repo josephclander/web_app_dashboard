@@ -11,6 +11,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
         <!-- CSS File -->
         <link rel="stylesheet" href="style.css?cb=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.css" integrity="sha512-/zs32ZEJh+/EO2N1b0PEdoA10JkdC3zJ8L5FTiQu82LR9S/rOQNfQN7U59U9BC12swNeRAz3HSzIL2vpp4fv3w==" crossorigin="anonymous" />
     </head>
     <body>
         <header class="header">
@@ -59,9 +60,30 @@
                 </div>
             </div>
             <div class="alert"><span class="alert__title">Alert</span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis accusamus saepe eligendi omnis nesciunt repellat? <span class="alert__close">&times;</span></div>
-            <div class="chart">Chart</div>
-            <div class="widget traffic">Daily Traffic</div>
-            <div class="widget mobile-users">Mobile Users</div>
+            <div class="widget line-chart">
+                <h3 class="line-chart__title">
+                    Chart
+                </h3>
+                <div class="chart-container line-chart__chart">
+                    <canvas id="line-chart"></canvas>
+                </div>
+            </div>
+            <div class="widget bar-chart">
+                <h3 class="bar-chart__title">
+                    Daily Traffic
+                </h3>
+                <div class="chart-container bar-chart__chart">
+                    <canvas id="bar-chart"></canvas>
+                </div>
+            </div>
+            <div class="widget donut-chart">
+                <h3 class="donut-chart__title">
+                    Mobile Users
+                </h3>
+                <div class="chart-container donut-chart__chart">
+                    <canvas id="donut-chart"></canvas>
+                </div>
+            </div>
             <div class="widget social">
                 <h3 class="social__title">
                     Social Stats
@@ -339,7 +361,7 @@
             </form>
         </main>
 
-        <!-- JavaScript File -->
+        <!-- JavaScript File --><script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js" integrity="sha512-d9xgZrVZpmmQlfonhQUvTR7lMPtO7NkZMkA0ABN3PHCbKA5nqylQ/yWlFAyY6hYgdF1Qh6nYiuADWwKB4C2WSw==" crossorigin="anonymous"></script>
         <script src="all.js?cb=1"></script>
     </body>
 </html>

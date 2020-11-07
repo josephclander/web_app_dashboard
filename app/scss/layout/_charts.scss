@@ -1,0 +1,21 @@
+.chart-container {
+  position: relative;
+  //   width: 80%;
+  min-width: 300px;
+  max-width: 400px;
+}
+
+.bar-chart__title,
+.donut-chart__title,
+.line-chart__title {
+  padding: 0.5rem;
+}
+
+.bar-chart__chart {
+  margin: 10px auto;
+}
+
+.donut-chart__chart {
+  margin: 10px auto;
+  margin-bottom: 20px;
+}
