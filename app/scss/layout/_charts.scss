@@ -29,6 +29,7 @@
   &__time-options {
     list-style: none;
     font-size: 0.8rem;
+    font-family: inherit;
 
     display: flex;
     justify-content: flex-end;
@@ -36,14 +37,24 @@
     margin-top: -20px;
   }
 
-  &__list-item {
+  &__list-item a:link,
+  &__list-item a:visited {
     margin-left: 0.5rem;
     padding: 0.3rem 1rem;
+    border-radius: 35px;
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+
+    transition: 0.4s;
+  }
+
+  &__list-item a:hover {
+    background-color: rgba($tertiary, 0.3);
   }
 
   &__list-item--selected {
-    background-color: $secondary;
-    color: $white;
-    border-radius: 35px;
+    background-color: $secondary !important;
+    color: $white !important;
   }
 }
