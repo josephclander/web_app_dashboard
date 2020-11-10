@@ -6,6 +6,7 @@ const notificationMessageList = document.querySelectorAll(
   '.notifications__item'
 );
 const notificationCrosses = document.querySelectorAll('.notifications__close');
+const newItemsDot = document.querySelector('.user__dot');
 
 // Alert bar
 function alertMessageHandler() {
@@ -19,9 +20,10 @@ const openMessageHandler = () => {
   notificationMessageList.forEach((item) => {
     item.style = 'display: flex';
   });
+  newItemsDot.style = 'display: none';
 };
 
-bell.addEventListener('click', openMessageHandler);
+bell.addEventListener('click', openMessageHandler, { once: true });
 
 const notificationsMessageHandler = (event) => {
   const parent = event.target.parentNode;
