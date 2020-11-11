@@ -1,8 +1,13 @@
 .chart-container {
   position: relative;
-  //   width: 80%;
-  min-width: 300px;
-  max-width: 400px;
+  // min-width: 320px;
+  // max-width: 400px;
+}
+
+.bar-chart,
+.donut-chart,
+.line-chart {
+  padding: $gap;
 }
 
 .bar-chart,
@@ -10,19 +15,13 @@
   border-bottom: $border-style;
 }
 
-.bar-chart__title,
-.donut-chart__title,
-.line-chart__title {
-  padding: 0.5rem;
-}
-
 .bar-chart__chart {
   margin: 10px auto;
+  margin-top: 20px;
 }
 
 .donut-chart__chart {
-  margin: 10px auto;
-  margin-bottom: 20px;
+  margin: 20px auto;
 }
 
 .line-chart {
@@ -30,7 +29,7 @@
 
   &__chart {
     margin: 10px auto;
-    margin-bottom: 20px;
+    margin-top: 20px;
   }
 
   &__time-options {
@@ -40,7 +39,6 @@
 
     display: flex;
     justify-content: flex-end;
-    margin-right: 0.5rem;
     margin-top: -20px;
   }
 

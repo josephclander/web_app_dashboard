@@ -1,5 +1,5 @@
 .messages {
-  padding: 0.5rem;
+  padding: $gap;
   border-bottom: $border-style;
 
   display: flex;
@@ -32,8 +32,7 @@
   }
 
   &__title {
-    padding: 0.5rem 0;
-    text-transform: uppercase;
+    margin-bottom: 0.5rem;
   }
 
   &__search,
@@ -66,6 +65,7 @@
   &__btn {
     background-color: $primary;
     transition: 0.4s;
+    margin: 0.5rem 0;
   }
 
   &__btn:hover {
