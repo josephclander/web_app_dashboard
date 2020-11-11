@@ -5,6 +5,11 @@
   max-width: 400px;
 }
 
+.bar-chart,
+.donut-chart {
+  border-bottom: $border-style;
+}
+
 .bar-chart__title,
 .donut-chart__title,
 .line-chart__title {
@@ -21,6 +26,8 @@
 }
 
 .line-chart {
+  border-bottom: 1px solid $grey-dark;
+
   &__chart {
     margin: 10px auto;
     margin-bottom: 20px;

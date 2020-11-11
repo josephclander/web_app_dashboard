@@ -4,7 +4,8 @@
   align-items: center;
 
   background: $grey-light;
-  border: 1px solid $grey-dark;
+  border-top: $border-style;
+  border-bottom: $border-style;
   padding: 0.7rem;
 
   &__container {
