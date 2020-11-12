@@ -1,5 +1,5 @@
 .messages {
-  padding: 1rem $gap;
+  padding: 1rem $small-gap;
   border-bottom: $border-style;
 
   display: flex;
@@ -82,5 +82,6 @@
     grid-column: main-start / main-middle;
     border-right: $border-style;
     border-bottom: none;
+    padding: 1rem $med-gap;
   }
 }

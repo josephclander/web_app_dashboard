@@ -6,12 +6,6 @@ $desktop: 1024px;
 // Design Elements
 
 $border-style: 1px solid $grey-dark;
-$gap: 0.5rem;
+$small-gap: 0.5rem;
+$med-gap: 1rem;
 $border-radius: 5px;
-
-// Need to think of a work around for this
-// sass variables
-
-// @media only screen and (min-width: $tablet) {
-//   $gap: 1rem;
-// }

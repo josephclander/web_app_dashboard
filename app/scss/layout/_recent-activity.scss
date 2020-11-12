@@ -1,13 +1,14 @@
 .recent-activity {
-  @media only screen and (min-width: $tablet) {
-    grid-column: main-middle / main-end;
-  }
-
-  padding: 1rem $gap;
+  padding: 1rem $small-gap;
   border-bottom: $border-style;
 
   &__title {
     text-transform: uppercase;
     margin-bottom: 1rem;
+  }
+
+  @media only screen and (min-width: $tablet) {
+    grid-column: main-middle / main-end;
+    padding: 1rem $med-gap;
   }
 }

@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
 
-  padding: 1rem $gap;
+  padding: 1rem $small-gap;
   border-bottom: $border-style;
 
   &__title {
@@ -77,6 +77,7 @@
 
   @media only screen and (min-width: $tablet) {
     grid-column: main-start / main-end;
+    padding: 1rem $med-gap;
 
     &__container {
       justify-content: space-between;

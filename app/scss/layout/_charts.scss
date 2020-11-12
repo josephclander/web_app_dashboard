@@ -5,7 +5,7 @@
 .bar-chart,
 .donut-chart,
 .line-chart {
-  padding: 1rem $gap;
+  padding: 1rem $small-gap;
 }
 
 .bar-chart,
@@ -69,14 +69,17 @@
 @media only screen and (min-width: $tablet) {
   .line-chart {
     grid-column: main-start / main-end;
+    padding: 1rem $med-gap;
   }
 
   .bar-chart {
     grid-column: main-start / main-middle;
     border-right: $border-style;
+    padding: 1rem $med-gap;
   }
 
   .donut-chart {
     grid-column: main-middle / main-end;
+    padding: 1rem $med-gap;
   }
 }

@@ -1,5 +1,5 @@
 .header {
-  padding: 0.7rem $gap;
+  padding: 0.7rem $small-gap;
 
   display: flex;
   justify-content: space-between;
@@ -16,6 +16,7 @@
 
   @media only screen and (min-width: $tablet) {
     grid-column: 1 / -1;
+    padding: 0.7rem $med-gap;
   }
 
   @media only screen and (min-width: $desktop) {
