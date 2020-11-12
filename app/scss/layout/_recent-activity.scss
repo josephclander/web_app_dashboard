@@ -1,6 +1,6 @@
 .recent-activity {
   @media only screen and (min-width: $tablet) {
-    grid-column: 2 / 3;
+    grid-column: main-middle / main-end;
   }
 
   padding: 1rem $gap;

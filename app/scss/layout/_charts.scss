@@ -32,7 +32,7 @@
 
   &__time-options {
     list-style: none;
-    font-size: 0.8rem;
+    font-size: 0.6rem;
     font-family: inherit;
 
     display: flex;
@@ -64,15 +64,15 @@
 
 @media only screen and (min-width: $tablet) {
   .line-chart {
-    grid-column: 1 / -1;
+    grid-column: main-start / main-end;
   }
 
   .bar-chart {
-    grid-column: 1 / 2;
+    grid-column: main-start / main-middle;
     border-right: $border-style;
   }
 
   .donut-chart {
-    grid-column: 2 / 3;
+    grid-column: main-middle / main-end;
   }
 }

@@ -1,8 +1,13 @@
 // MOBILE FIRST
 .grid-container {
   display: grid;
+  grid-template-columns: 1fr;
 
   @media only screen and (min-width: $tablet) {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: [main-start] 1fr [main-middle] 1fr [main-end];
+  }
+
+  @media only screen and (min-width: $desktop) {
+    grid-template-columns: min-content [main-start] 1fr [main-middle] 1fr [main-end];
   }
 }

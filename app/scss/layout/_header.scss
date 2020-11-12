@@ -1,8 +1,4 @@
 .header {
-  @media only screen and (min-width: $tablet) {
-    grid-column: 1 / -1;
-  }
-
   padding: 0.7rem $gap;
 
   display: flex;
@@ -16,6 +12,14 @@
     & span {
       font-weight: 300;
     }
+  }
+
+  @media only screen and (min-width: $tablet) {
+    grid-column: 1 / -1;
+  }
+
+  @media only screen and (min-width: $desktop) {
+    grid-row: 1 / 2;
   }
 }
 
@@ -67,6 +71,4 @@
       border-radius: 50%;
     }
   }
-  // &__name {
-  // }
 }

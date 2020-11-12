@@ -1,7 +1,6 @@
 .search {
-  @media only screen and (min-width: $tablet) {
-    grid-column: 1 / -1;
-  }
+  flex: 1;
+  width: 100%;
 
   display: flex;
   justify-content: center;
@@ -74,5 +73,13 @@
   &__button:hover &__mag-icon,
   &__button:focus &__mag-icon {
     color: $white;
+  }
+
+  @media only screen and (min-width: $tablet) {
+    flex: 5;
+    border-top: none;
+    border-left: $border-style;
+    justify-content: flex-end;
+    width: auto;
   }
 }

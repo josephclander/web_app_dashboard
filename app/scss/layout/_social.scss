@@ -76,7 +76,7 @@
   }
 
   @media only screen and (min-width: $tablet) {
-    grid-column: 1 / -1;
+    grid-column: main-start / main-end;
 
     &__container {
       justify-content: space-between;

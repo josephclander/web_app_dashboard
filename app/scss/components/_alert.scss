@@ -1,9 +1,5 @@
 .alert {
-  @media only screen and (min-width: $tablet) {
-    grid-column: 1 / -1;
-  }
-
-  margin: 2rem $gap;
+  margin: 1rem $gap;
   padding: 0.5rem;
   border-radius: $border-radius;
 
@@ -27,5 +23,9 @@
     margin-left: 0.5rem;
 
     cursor: pointer;
+  }
+
+  @media only screen and (min-width: $tablet) {
+    grid-column: main-start / main-end;
   }
 }

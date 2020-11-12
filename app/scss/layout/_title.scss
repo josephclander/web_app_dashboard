@@ -1,7 +1,27 @@
-.title {
-  @media only screen and (min-width: $tablet) {
-    grid-column: 1 / -1;
+.title-bar {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+
+  &__title {
+    padding: 1rem $gap;
+    flex: 1;
+    width: 100%;
+
+    @media only screen and (min-width: $tablet) {
+      width: auto;
+    }
   }
 
-  padding: 1rem $gap;
+  @media only screen and (min-width: $tablet) {
+    grid-column: main-start / main-end;
+    flex-wrap: nowrap;
+    flex-direction: row;
+  }
+
+  @media only screen and (min-width: $desktop) {
+    grid-column: main-start / main-end;
+    grid-row: 2 / 3;
+  }
 }
