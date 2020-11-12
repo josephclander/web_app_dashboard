@@ -209,6 +209,7 @@ const createLineChart = () =>
           backgroundColor: 'rgba(116, 119, 191, 0.3)',
           borderColor: 'rgb(116, 119, 191)',
           borderWidth: 1,
+          pointRadius: 5,
           pointBackgroundColor: '#fff',
           pointBorderColor: 'rgb(116, 119, 191)',
         },
