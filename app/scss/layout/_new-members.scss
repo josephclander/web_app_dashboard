@@ -7,44 +7,7 @@
     margin-bottom: 0.5rem;
   }
 
-  //   &__container {
-
-  //   }
-}
-
-.member {
-  display: flex;
-  align-items: center;
-
-  font-size: 0.8rem;
-  padding: 0.8rem 0;
-
-  &__photo {
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-
-    margin-right: 0.5rem;
-  }
-
-  &__info {
-    flex: 1;
-  }
-
-  &__name {
-    margin-bottom: -3px;
-  }
-
-  &__email:link,
-  &__email:visited {
-    color: $primary;
-    text-decoration: none;
-  }
-
-  //   &__date {
-  //   }
-
-  &:not(:last-child) {
-    border-bottom: 1px solid $grey-dark;
+  &__container {
+    font-size: 0.8rem;
   }
 }
