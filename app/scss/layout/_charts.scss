@@ -83,3 +83,10 @@
     padding: 1rem $med-gap;
   }
 }
+
+@media only screen and (min-width: $desktop) {
+  .line-chart__chart {
+    width: 929px;
+    height: 464px;
+  }
+}
