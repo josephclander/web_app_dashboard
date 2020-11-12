@@ -2,8 +2,12 @@
   display: flex;
   flex-direction: column;
 
-  padding: $gap;
+  padding: 1rem $gap;
   border-bottom: $border-style;
+
+  &__title {
+    margin-bottom: 1rem;
+  }
 
   &__container {
     display: flex;

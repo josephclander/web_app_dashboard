@@ -6,7 +6,7 @@
   background: $grey-light;
   border-top: $border-style;
   border-bottom: $border-style;
-  padding: 0.7rem;
+  padding: 1rem;
 
   &__container {
     border: 1px solid $grey-dark;
@@ -28,7 +28,7 @@
     font-family: inherit;
     font-size: inherit;
     color: $text;
-    min-width: 200px;
+    min-width: 300px;
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
     outline: none;

@@ -1,11 +1,11 @@
 .settings {
-  padding: $gap;
+  padding: 1rem $gap;
 
   display: flex;
   flex-direction: column;
 
   &__title {
-    margin-bottom: 0.5rem;
+    margin-bottom: 1rem;
   }
 
   &__switch {
