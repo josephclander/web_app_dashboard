@@ -38,6 +38,10 @@
     display: flex;
     justify-content: flex-end;
     margin-top: -20px;
+
+    @media only screen and (min-width: $tablet) {
+      font-size: 0.8rem;
+    }
   }
 
   &__list-item a:link,
