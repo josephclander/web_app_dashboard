@@ -1,4 +1,8 @@
 .sidebar {
+  @media only screen and (min-width: $tablet) {
+    grid-column: 1 / -1;
+  }
+
   background: $primary-dark;
 
   display: flex;

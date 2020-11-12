@@ -8,3 +8,10 @@ $desktop: 1024px;
 $border-style: 1px solid $grey-dark;
 $gap: 0.5rem;
 $border-radius: 5px;
+
+// Need to think of a work around for this
+// sass variables
+
+// @media only screen and (min-width: $tablet) {
+//   $gap: 1rem;
+// }

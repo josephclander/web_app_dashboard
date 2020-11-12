@@ -1,3 +1,7 @@
 .title {
+  @media only screen and (min-width: $tablet) {
+    grid-column: 1 / -1;
+  }
+
   padding: 1rem $gap;
 }

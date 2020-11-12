@@ -58,6 +58,12 @@
     width: 32px;
   }
 
+  &__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
   &__company {
     margin-bottom: -7px;
     color: $primary;
@@ -65,7 +71,25 @@
   }
 
   &__figure {
-    font-size: 2rem;
+    font-size: 1.8rem;
     font-weight: 300;
+  }
+
+  @media only screen and (min-width: $tablet) {
+    grid-column: 1 / -1;
+
+    &__container {
+      justify-content: space-between;
+    }
+
+    &__box {
+      flex: 1 0 12.5rem; // 200px / 16 = 12.5
+
+      margin: 0;
+
+      &:not(:last-child) {
+        margin-right: 1rem;
+      }
+    }
   }
 }

@@ -1,13 +1,14 @@
 .new-members {
+  @media only screen and (min-width: $tablet) {
+    grid-column: 1 / 2;
+    border-right: $border-style;
+  }
+
   padding: 1rem $gap;
   border-bottom: $border-style;
 
   &__title {
     text-transform: uppercase;
     margin-bottom: 1rem;
-  }
-
-  &__container {
-    font-size: 0.8rem;
   }
 }

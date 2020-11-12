@@ -4,16 +4,19 @@
   display: flex;
   flex-direction: column;
 
+  &__input {
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
   &__title {
     margin-bottom: 1rem;
   }
 
   &__switch {
-    margin: 1rem 0;
-  }
-
-  &__drop-down {
-    margin: 1rem 0;
+    margin-bottom: 0.5rem;
   }
 
   &__cta {
@@ -23,7 +26,7 @@
 
   &__save {
     background-color: $primary;
-    margin-right: 1rem;
+    margin-right: 0.5rem;
     flex: 1;
     transition: 0.4s;
   }
@@ -35,7 +38,7 @@
 
   &__cancel {
     background-color: $grey-dark;
-    margin-left: 1rem;
+    margin-left: 0.5rem;
     flex: 1;
     transition: 0.4s;
   }
@@ -43,5 +46,9 @@
   &__cancel:hover,
   &__cancel:active {
     background-color: darken($grey-dark, 30%);
+  }
+
+  @media only screen and (min-width: $tablet) {
+    grid-column: 2 / 3;
   }
 }

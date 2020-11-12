@@ -1,7 +1,5 @@
 .chart-container {
   position: relative;
-  // min-width: 320px;
-  // max-width: 400px;
 }
 
 .bar-chart,
@@ -61,5 +59,20 @@
   &__list-item--selected {
     background-color: $secondary !important;
     color: $white !important;
+  }
+}
+
+@media only screen and (min-width: $tablet) {
+  .line-chart {
+    grid-column: 1 / -1;
+  }
+
+  .bar-chart {
+    grid-column: 1 / 2;
+    border-right: $border-style;
+  }
+
+  .donut-chart {
+    grid-column: 2 / 3;
   }
 }
