@@ -1,5 +1,14 @@
 // MOBILE FIRST
+.container {
+  background-color: $grey-dark;
+  // width: 100%;
+}
+
 .grid-container {
+  margin: 0 auto;
+  max-width: 1366px;
+  background-color: $white;
+
   display: grid;
   grid-template-columns: 1fr;
 
