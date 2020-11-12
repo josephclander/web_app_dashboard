@@ -27,7 +27,7 @@
     color: $white;
     padding: 0.5rem;
     width: 90%;
-    border-radius: 5px;
+    border-radius: $border-radius;
     transform: translateY(-110%) translateX(-50%);
     opacity: 1;
     transition: all 0.4s;
@@ -46,7 +46,7 @@
     font-family: inherit;
     border: 1px solid $grey-dark;
     padding: 0.5rem;
-    border-radius: 5px;
+    border-radius: $border-radius;
   }
 
   &__search,
