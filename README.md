@@ -70,3 +70,24 @@ In this project, you'll take a mockup and a few icons and build a beautiful, web
 
 4. Use local storage to save the settings.
    - When page is reloaded the settings are remembered.
+
+## Accessing the site
+
+As previous lessons introduced 'Gulp' as a build tool, I have used this to produce the files and run a server so we can use the svgs.
+Distribution files are not tracked with Git. To produce them, install Gulp, install the node files with npm install, and initiate in the command line with `gulp`.
+
+## Notes from the build
+
+- Browser testing: Safari 14.01, Chrome 86 and Firefox 83
+- Breakpoints added as described in the brief
+  - Grid and flexbox used to adapt to the breakpoints
+  - Graceful degradation hasn't been implemented for grid/flex as this has been created in 2020
+  - Site has issues with rendering on resizing - see special note in issues
+- All 4 points of the extra credit criteria have been implemented
+- In the file structure and gulp configuration, original svg files are overwritten by the svgo task before being used to create a sprite.
+  - Potentially this should be adapted for redundancy
+  - The Facebook svg needed to be handled manually before using svgo to avoid removing the svg tag!
+
+## Issues
+
+The site has issues when increasing the width of the page, in that at the breakpoints, the page resizes to fit but the images can be too small. On refreshing the page, everything fits as expected. On reducing the width of the browser, the elements do not shrink but stay at the size they stretched too. My thoughts are that this is potentially due to the text resizing I introduced for larger devices.
