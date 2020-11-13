@@ -1,4 +1,6 @@
 .title-bar {
+  grid-column: main-start / main-end;
+
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -16,13 +18,11 @@
   }
 
   @media only screen and (min-width: $tablet) {
-    grid-column: main-start / main-end;
     flex-wrap: nowrap;
     flex-direction: row;
   }
 
   @media only screen and (min-width: $desktop) {
-    grid-column: main-start / main-end;
     grid-row: 2 / 3;
   }
 }

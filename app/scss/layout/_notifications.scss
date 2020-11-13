@@ -1,5 +1,6 @@
 .notifications {
   background: $white;
+  grid-column: main-start / main-end;
 
   &__list {
     list-style-type: none;
@@ -33,9 +34,5 @@
     font-weight: 700;
     font-size: 1.5rem;
     cursor: pointer;
-  }
-
-  @media only screen and (min-width: $tablet) {
-    grid-column: main-start / main-end;
   }
 }

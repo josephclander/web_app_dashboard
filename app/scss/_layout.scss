@@ -1,7 +1,8 @@
 // MOBILE FIRST
 .container {
   background-color: $grey-dark;
-  // width: 100%;
+  width: 100%;
+  height: 100%;
 }
 
 .grid-container {
@@ -10,7 +11,7 @@
   background-color: $white;
 
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: [main-start] 1fr [main-end];
 
   @media only screen and (min-width: $tablet) {
     grid-template-columns: [main-start] 1fr [main-middle] 1fr [main-end];

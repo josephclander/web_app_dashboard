@@ -1,4 +1,6 @@
 .social {
+  grid-column: main-start / main-end;
+
   display: flex;
   flex-direction: column;
 
@@ -76,7 +78,6 @@
   }
 
   @media only screen and (min-width: $tablet) {
-    grid-column: main-start / main-end;
     padding: 1rem $med-gap;
 
     &__container {

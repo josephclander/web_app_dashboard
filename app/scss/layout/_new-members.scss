@@ -1,4 +1,6 @@
 .new-members {
+  grid-column: main-start / main-end;
+
   padding: 1rem $small-gap;
   border-bottom: $border-style;
 
