@@ -90,4 +90,6 @@ Distribution files are not tracked with Git. To produce them, install Gulp, inst
 
 ## Issues
 
-The site has issues when increasing the width of the page, in that at the breakpoints, the page resizes to fit but the images can be too small. On refreshing the page, everything fits as expected. On reducing the width of the browser, the elements do not shrink but stay at the size they stretched too. My thoughts are that this is potentially due to the text resizing I introduced for larger devices.
+The site has issues when increasing the width of the page, in that at the breakpoints, the page resizes to fit but the images can be too small. On refreshing the page, everything fits as expected. On reducing the width of the browser, the elements do not shrink but stay at the size they stretched too.
+
+After disabling the graphs, everything worked as expected. The site remains adaptive, it will correctly size to the browser it's started with.
